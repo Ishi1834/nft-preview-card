@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--main-BG);
+  color: hsla(0, 0%, 100%, 0.603);
+  padding: 20px;
+}
+.container {
+  padding: 25px;
+  background-color: var(--card-BG);
+  border-radius: 15px;
+  margin-top: 40px;
+}
+img {
+  max-width: 100%;
+}
+.mainImg {
+  position: relative;
+}
+.mainImg img {
+  border-radius: 10px;
+}
+.mainImg img:hover {
+  cursor: pointer;
+}
+.mainImg div {
+  cursor: pointer;
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 40%);
+  top: 0;
+  width: 100%;
+  height: 99%;
+  z-index: 1;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.mainImg div:hover {
+  opacity: 1;
+}
+.mainImg div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+ul {
+  list-style: none;
+}
+.container h2 {
+  color: white;
+  font-weight: 600;
+  margin: 15px 0 15px 0;
+}
+.container h2:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+.container ul li img {
+  margin-right: 7px;
+}
+.container ul li:first-child {
+  color: var(--Cyan);
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 20px 0 20px 0;
+}
+.avatar img {
+  width: 45px;
+  border: 2px solid var(--White);
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.avatar p span {
+  color: var(--White);
+  font-weight: 400;
+}
+.avatar p span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+p {
+  font-weight: 300;
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 500px) {
+  .container {
+    width: 450px;
+    margin: 60px auto 0;
+  }
+}
