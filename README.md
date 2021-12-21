@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](screenshot.JPG)
 
 ### Links
 
@@ -76,7 +76,7 @@ How to change the background color of an image using z-index properties:
 
 ### Useful resources
 
-- [Youtube video](https://www.youtube.com/watch?v=9bGbykdR4T8&ab_channel=tsbsankara) - This helped me how to use the z-index to change the image color on hover.
+- [Youtube video](https://www.youtube.com/watch?v=9bGbykdR4T8&ab_channel=tsbsankara) - This helped me understand how to use the z-index to change the image color on hover.
 
 ## Author
 
